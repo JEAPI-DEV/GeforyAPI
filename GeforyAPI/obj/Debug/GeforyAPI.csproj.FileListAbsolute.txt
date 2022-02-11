@@ -1,0 +1,6 @@
+C:\Users\JEAPI\Desktop\ownlibs\geforyapi\GeforyAPI.dll
+C:\Users\JEAPI\Desktop\ownlibs\geforyapi\GeforyAPI.pdb
+C:\Users\JEAPI\source\repos\GeforyAPI\GeforyAPI\obj\Debug\GeforyAPI.csproj.CoreCompileInputs.cache
+C:\Users\JEAPI\source\repos\GeforyAPI\GeforyAPI\obj\Debug\GeforyAPI.dll
+C:\Users\JEAPI\source\repos\GeforyAPI\GeforyAPI\obj\Debug\GeforyAPI.pdb
+C:\Users\JEAPI\source\repos\GeforyAPI\GeforyAPI\obj\Debug\GeforyAPI.csproj.AssemblyReference.cache
