@@ -28,3 +28,41 @@ This API is not really a longer Project I just want to make my API opensource
 - Master
 - Managers
 
+
+## Installation
+
+ProgressBar example
+
+```cs
+Console.Write("Downloading Menu.cs... ");
+    using (var progress = new ProgressBar(50))
+    {
+        for (int i = 0; i <= 100; i++)
+        {
+            progress.Report((double)i / 100);
+            Thread.Sleep(40);
+        }
+    }
+Console.WriteLine("Done.");
+```
+Menu Example
+
+```cs
+string text = @"
+                                        ▄████  ██░ ██  ▒█████    ██████ ▄▄▄█████▓  ██████ 
+                                      ██▒ ▀█▒▓██░ ██▒▒██▒  ██▒▒██    ▒ ▓  ██▒ ▓▒▒██    ▒ 
+                                     ▒██░▄▄▄░▒██▀▀██░▒██░  ██▒░ ▓██▄   ▒ ▓██░ ▒░░ ▓██▄   
+                                     ░▓█  ██▓░▓█ ░██ ▒██   ██░  ▒   ██▒░ ▓██▓ ░   ▒   ██▒
+                                      ░▒▓███▀▒░▓█▒░██▓░ ████▓▒░▒██████▒▒  ▒██▒ ░ ▒██████▒▒
+                                      ░▒   ▒  ▒ ░░▒░▒░ ▒░▒░▒░ ▒ ▒▓▒ ▒ ░  ▒ ░░   ▒ ▒▓▒ ▒ ░
+                                        ░   ░  ▒ ░▒░ ░  ░ ▒ ▒░ ░ ░▒  ░ ░    ░    ░ ░▒  ░ ░
+                                       ░ ░   ░  ░  ░░ ░░ ░ ░ ▒  ░  ░  ░    ░      ░  ░  ░  
+                                         ░  ░  ░  ░    ░ ░        ░                 ░  
+                                                                            
+";
+
+            string[] options = new string[] { "Singelplayer", "Multiplayer", "Options", "Exit" };
+            Menu menu = new Menu("*", " >> ", " << ", text, options, true);
+            int selected = menu.Run();
+```
+    
