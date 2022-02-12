@@ -10,7 +10,7 @@ namespace GeforyAPI
         private string Prefix;
         private string Suffix;
         private string Text;
-        private bool center;
+        private bool Center;
 
         public Menu(string prefixbeforeoption, string prefix, string suffix, string text, string[] options, bool center)
         {
@@ -19,6 +19,7 @@ namespace GeforyAPI
             Suffix = suffix;
             Text = text;
             Options = options;
+            Center = center;
             SelectedIndex = 0;
         }
 
@@ -43,7 +44,7 @@ namespace GeforyAPI
                 }
                 string toprint = $"{prefixbeforeoption}{Prefix}{Options[i]}{Suffix}";
 
-                if (center)
+                if (Center)
                 {
                     Console.SetCursorPosition((Console.WindowWidth - toprint.Length) / 2, Console.CursorTop);
                 }

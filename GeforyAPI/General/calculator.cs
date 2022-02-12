@@ -15,7 +15,6 @@ namespace GeforyAPI
 
         public static string compute(string input)
         {
-
             answer = new DataTable().Compute(input, "").ToString();
             return answer;
 
